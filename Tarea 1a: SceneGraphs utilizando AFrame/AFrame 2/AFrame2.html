@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Segunda Escena en A-Frame</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <!-- Cámara -->
+        <a-entity camera position="0 1.6 0" look-controls></a-entity>
+        
+        <!-- Luz -->
+        <a-light type="ambient" color="#888"></a-light>
+        <a-light type="directional" position="-3 5 0" intensity="0.5"></a-light>
+        
+        <!-- Objeto con Textura -->
+        <a-box position="-1 0.5 -3" rotation="0 45 0" material="src: url(textura.jpg)"></a-box>
+        
+        <!-- Modelo GLTF -->
+        <a-entity gltf-model="url(gltf/modelo.gltf)" position="2 0 -5" scale="3 3 3"></a-entity>
+        
+        <!-- Sonido -->
+        <a-sound src="sonido.mp3" position="2 2 -3" autoplay="true"></a-sound>
+    </a-scene>
+</body>
+</html>
