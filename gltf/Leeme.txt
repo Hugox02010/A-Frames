@@ -1,0 +1,1 @@
+Estos son todos los archivos con los que trabaja el arhivo "modelo.gltf"
